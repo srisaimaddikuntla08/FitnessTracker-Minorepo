@@ -5,6 +5,7 @@ import com.example.FitnessTracker.dto.AuthRequest;
 import com.example.FitnessTracker.dto.AuthResponse;
 import com.example.FitnessTracker.model.User;
 import com.example.FitnessTracker.service.UserService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,15 +22,15 @@ public class UseController {
 
 
     @PostMapping("/create")
-    public  User createUser(@RequestBody AuthRequest authRequest){
-        return userService.create(authRequest);
+    public ResponseEntity<User> createUser(@RequestBody AuthRequest authRequest){
+        return ResponseEntity.ok(userService.create(authRequest));
 
     }
 
 
     @GetMapping("/users")
-    public List<AuthResponse> getAllUsers(){
+    public ResponseEntity<List<AuthResponse>> getAllUsers(){
 
-        return userService.getALlUsers();
+        return ResponseEntity.ok(userService.getALlUsers());
     }
 }
