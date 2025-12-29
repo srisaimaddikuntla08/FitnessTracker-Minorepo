@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api/activities")
 public class ActivityController {
 
-private final ActivityService activityService;
+private final ActivityService activityService ;
 
 public ActivityController(ActivityService activityService){
     this.activityService = activityService;
@@ -23,10 +23,10 @@ public ActivityController(ActivityService activityService){
         return ResponseEntity.ok(activityService.trackActivity(activityRequest));
     }
 //
-//    @GetMapping
-//    public ResponseEntity<<List<ActivityResponse>> trackerActivity(){
-//        return " ";
-//    }
+    @GetMapping
+    public ResponseEntity<List<ActivityResponse>> getUserActivity( @RequestHeader(value = "X-User-ID") String userId){
+        return ResponseEntity.ok(activityService.getUserActivities(userId));
+    }
 
 
 
