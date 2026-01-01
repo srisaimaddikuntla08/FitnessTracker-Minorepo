@@ -4,7 +4,6 @@ import com.example.FitnessTracker.model.Activity;
 import com.example.FitnessTracker.model.Recommendation;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.lang.ScopedValue;
 import java.util.List;
 
 
