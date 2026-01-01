@@ -3,8 +3,6 @@
 A containerized **Fitness Tracker** application that helps users log workouts, track fitness progress, and manage health-related data.  
 The application is fully **Dockerized** for easy setup, deployment, and scalability.
 
----
-
 ## 🚀 Features
 
 - 📊 Track workouts and fitness activities
@@ -13,7 +11,6 @@ The application is fully **Dockerized** for easy setup, deployment, and scalabil
 - 🐳 Docker-based deployment for consistency across environments
 - ⚡ Quick setup using Docker Compose
 
----
 
 ## 🛠 Tech Stack
 
@@ -24,6 +21,5 @@ The application is fully **Dockerized** for easy setup, deployment, and scalabil
 - **Platform:Windows 
 
 ---
-
 ## 📁 Project Structure
 
