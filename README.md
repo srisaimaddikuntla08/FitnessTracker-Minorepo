@@ -20,8 +20,8 @@ The application is fully **Dockerized** for easy setup, deployment, and scalabil
 - **Backend:** Java (Spring Boot)
 - **Build Tool:** Maven
 - **Containerization:** Docker & Docker Compose
-- **Database:** (Add here – e.g., MySQL / PostgreSQL / H2)
-- **Platform:** Cross-platform (Windows / Linux / macOS)
+- **Database: MySQL 
+- **Platform:Windows 
 
 ---
 
