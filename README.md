@@ -1,4 +1,3 @@
-
 # 🏋️ Fitness Tracker Application
 
 A containerized **Fitness Tracker** application that helps users log workouts, track fitness progress, and manage health-related data.  
