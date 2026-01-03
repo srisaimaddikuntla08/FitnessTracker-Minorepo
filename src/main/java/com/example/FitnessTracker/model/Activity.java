@@ -54,8 +54,10 @@ public class Activity {
     private  LocalDateTime updatedAt;
 
 
+
     @OneToMany(mappedBy = "activity",cascade = CascadeType.ALL,orphanRemoval = true)
     @JsonIgnore
     private List<Recommendation> recommendations = new ArrayList<>();
+
 }
 
